@@ -9,14 +9,14 @@
 <meta property="og:title" content="IQ Test — How Smart Are You? 🧠">
 <meta property="og:description" content="14 questions. Real IQ score. Official certificate on email. Only ₹1!">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://iqtest.in">
-<meta property="og:image" content="https://iqtest.in/og-image.png">
+<meta property="og:url" content="https://gotiqtest.netlify.app/">
+<meta property="og:image" content="https://gotiqtest.netlify.app//og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IQ Test — How Smart Are You? 🧠">
 <meta name="twitter:description" content="14 questions. Real IQ score. Certificate on email. Only ₹1!">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 <title>IQ Test — How Smart Are You? 🧠 | Only ₹1</title>
-<link rel="canonical" href="https://iqtest.in">
+<link rel="canonical" href="https://gotiqtest.netlify.app/">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <style>
@@ -338,7 +338,7 @@ const CFG={
   EMAILJS_PUBLIC_KEY:'AAPKI_PUBLIC_KEY',
   EMAILJS_SERVICE_ID:'service_XXXXXXX',
   EMAILJS_TEMPLATE_ID:'template_XXXXXXX',
-  SITE_NAME:'IQTest.in',SITE_URL:'https://iqtest.in',
+  SITE_NAME:'IQTest.in',SITE_URL:'https://gotiqtest.netlify.app/',
 };
 emailjs.init(CFG.EMAILJS_PUBLIC_KEY);
 
@@ -616,7 +616,7 @@ function drawCert(name,iq,level,correct,pct,gen){
   var d=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'});
   ctx.fillStyle='#9ca3af';ctx.font='11px sans-serif';ctx.fillText('Correct: '+correct+'/'+QS.length+'  ·  Gender: '+gen.toUpperCase()+'  ·  '+d,W/2,308);
   ctx.strokeStyle='#1f2937';ctx.lineWidth=0.8;ctx.beginPath();ctx.moveTo(80,340);ctx.lineTo(270,340);ctx.stroke();ctx.beginPath();ctx.moveTo(430,340);ctx.lineTo(620,340);ctx.stroke();
- ctx.fillStyle='#a78bfa';ctx.font='bold 11px sans-serif';ctx.fillText('Dr. A. Kumar',175,342);ctx.fillText('\u2605 Verified \u2605',525,342);ctx.fillStyle='#6b7280';ctx.font='9px sans-serif';ctx.fillText('IQ Assessment Head',175,355);ctx.fillText('IQTest.in Official',525,355);
+ ctx.fillStyle='#a78bfa';ctx.font='bold 11px sans-serif';ctx.fillText('Dr. A. Kumar',175,342);ctx.fillText('\u2605 Verified \u2605',525,342);ctx.fillStyle='#6b7280';ctx.font='9px sans-serif';ctx.fillText('IQ Assessment Head',175,355);ctx.fillText('gotiqtest.netlify.app Official',525,355);
   ctx.fillStyle='#4f46e5';ctx.font='9px sans-serif';ctx.fillText('ID: IQ-'+Date.now().toString(36).toUpperCase()+'  ·  '+CFG.SITE_URL,W/2,382);
   ctx.fillStyle=g;ctx.fillRect(0,H-22,W,22);ctx.fillStyle='rgba(255,255,255,0.5)';ctx.font='9px sans-serif';
   ctx.fillText('This certificate verifies an officially scored IQ assessment. Average IQ = 100.',W/2,H-7);
